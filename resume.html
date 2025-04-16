@@ -3,110 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Résumé – Jakob Rich</title>
+  <title>Résumé – Jakob Rich</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Your custom CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <!-- Your Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Quick inline tweaks specifically for resume.html */
+    .resume-header { text-align: center; margin-bottom: 0.5rem; }
+    .resume-header h1 { font-size: 2rem; margin-bottom: 0; }
+    .resume-header p { margin: 0; font-size: 0.95rem; line-height: 1.3; }
+
+    hr { border: none; border-top: 1px solid #444; margin: 1.5rem 0; }
+    #resume h2 { font-size: 1.5rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    #resume article { margin-bottom: 1rem; }
+    #resume article h3 { font-size: 1.15rem; margin-bottom: 0.25rem; }
+    #resume ul { margin-left: 1.25rem; margin-bottom: 1rem; }
+  </style>
 </head>
 <body>
-  <!-- Navigation (your existing nav) -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- … -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Jakob Rich</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resume.html">Résumé</a></li>
+          <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main class="container my-5">
-    <section id="resume">
-      <!-- HTML Résumé -->
-      <header class="resume-header">
-        <h1>Jakob Rich</h1>
-        <p>
-          <strong>Email:</strong> <a href="mailto:JWR2021@byu.edu">JWR2021@byu.edu</a><br>
-          <strong>Phone:</strong> (949) 245‑5350<br>
-          <strong>LinkedIn:</strong> 
-            <a href="https://linkedin.com/in/jakob-rich" target="_blank">
-              linkedin.com/in/jakob-rich
-            </a>
-        </p>
-      </header>
-      <hr>
-
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Brigham Young University – Marriott School of Business</strong>  
-            <em>May 2023 – Dec 2026 (expected)</em><br>
-            B.S. in Pre‑Finance, Provo, UT — Finance Society</li>
-        <li><strong>Brigham Young University–Idaho</strong>  
-            <em>Apr 2022 – Feb 2023</em><br>
-            Undergraduate Studies in Business Administration and Operations, Rexburg, ID  
-            <ul>
-              <li>Accounting, business, and microeconomics</li>
-              <li>Developed 50+ LinkedIn connections with business professionals</li>
-            </ul>
-        </li>
-      </ul>
-      <hr>
-
-      <h2>Experience</h2>
-      <article class="mb-4">
-        <h3>Panda Express</h3>
-        <p><em>Shift Lead, May 2023 – Present, Provo, UT</em></p>
-        <ul>
-          <li>Led daily operations in manager’s absence at a 4‑star gourmet venue</li>
-          <li>Completed a 5‑week assistant‑manager training (180‑page binder)</li>
-        </ul>
-      </article>
-      <!-- Repeat for other roles… -->
-      <hr>
-
-      <h2>Volunteer Experience</h2>
-      <article class="mb-4">
-        <h3>Church of Jesus Christ of Latter‑Day Saints</h3>
-        <p><em>Zone Leader Missionary, Jan 2020 – Jan 2022</em></p>
-        <ul>
-          <li>Directed 20+ missionaries; improved team efficiency</li>
-          <li>Managed COVID‑19 supply distribution with forklift operations</li>
-          <li>Served at multiple community organizations</li>
-        </ul>
-      </article>
-      <hr>
-
-      <h2>Skills &amp; Interests</h2>
-      <ul class="row">
-        <li class="col-md-6">1,000+ In‑person Connections; Founder of “Let’s Hang Out Provo”</li>
-        <li class="col-md-6">AI Development (1 year): Built comprehensive Marketing/Sales AI</li>
-      </ul>
-      <hr>
-
-      <!-- PDF Download Button -->
-      <h2>Download PDF Version</h2>
+  <!-- Résumé Content -->
+  <main class="container my-5" id="resume">
+    <!-- Header -->
+    <header class="resume-header">
+      <h1>Jakob Rich</h1>
       <p>
-        <a href="JakobRich_Resume.pdf" download class="btn btn-outline-primary">
-          Download PDF Résumé
+        <strong>Email:</strong>
+        <a href="mailto:JWR2021@byu.edu">JWR2021@byu.edu</a> ∙ 
+        <strong>Phone:</strong> (949) 245‑5350 ∙ 
+        <strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/jakob-rich" target="_blank">
+          linkedin.com/in/jakob-rich
         </a>
       </p>
+    </header>
+    <hr>
 
-      <!-- Embedded PDF Viewer -->
-      <h2 class="mt-4">View PDF Here</h2>
-      <iframe
-        src="JakobRich_Resume.pdf"
-        width="100%"
-        height="600"
-        style="border:1px solid #ccc;"
+    <!-- Education -->
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>Brigham Young University – Marriott School of Business</strong><br>
+        <em>May 2023 – Dec 2026 (expected), Provo, UT</em><br>
+        B.S. in Pre‑Finance — Finance Society
+      </li>
+      <li>
+        <strong>Brigham Young University–Idaho</strong><br>
+        <em>Apr 2022 – Feb 2023, Rexburg, ID</em><br>
+        Undergraduate Studies in Business Administration & Operations
+        <ul>
+          <li>Accounting, business, and microeconomics</li>
+          <li>Developed 50+ LinkedIn connections with professionals</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+
+    <!-- Experience -->
+    <h2>Experience</h2>
+    <article>
+      <h3>Panda Express</h3>
+      <p><em>Shift Lead, May 2023 – Present, Provo, UT</em></p>
+      <ul>
+        <li>Led daily operations in manager’s absence at a 4‑star gourmet venue.</li>
+        <li>Completed a 5‑week assistant‑manager training program (180‑page binder).</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Nordstrom Café / Nordstrom</h3>
+      <p><em>Line/Prep Cook, Jul 2018 – Jan 2020, Mission Viejo, CA</em></p>
+      <ul>
+        <li>Baked 50+ cookies at once; maintained temperature for large roasts in the 5th‑busiest US location.</li>
+        <li>Created 6 soup varieties per shift; processed hundreds of pounds of vegetables.</li>
+        <li>Streamlined meal prep to under 15 minutes per dish, boosting customer satisfaction.</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Hilton ROP Culinary Class & Internship</h3>
+      <p><em>Prep Cook, Apr 2018 – Jul 2018, Irvine, CA</em></p>
+      <ul>
+        <li>Mastered 5 mother sauces, knife skills, and safety under Chef Thomas.</li>
+        <li>Served 600+ banquet guests; upheld 4‑star quality standards.</li>
+        <li>Prepared fruit platters and steaks for high-profile clients like the USA Water Polo Team.</li>
+      </ul>
+    </article>
+    <hr>
+
+    <!-- Volunteer Experience -->
+    <h2>Volunteer Experience</h2>
+    <article>
+      <h3>Church of Jesus Christ of Latter‑Day Saints</h3>
+      <p><em>Zone Leader Missionary, Jan 2020 – Jan 2022</em></p>
+      <ul>
+        <li>Directed 20+ missionaries; increased team efficiency in community projects.</li>
+        <li>Managed inventory and forklift operations during COVID‑19 supply distribution.</li>
+        <li>Served at Family Assistant Ministries, Saddleback Church, Bishop’s Store House, etc.</li>
+      </ul>
+    </article>
+    <hr>
+
+    <!-- Skills & Interests -->
+    <h2>Skills &amp; Interests</h2>
+    <ul class="row">
+      <li class="col-md-6">1,000+ in-person connections; Founder of “Let’s Hang Out Provo”.</li>
+      <li class="col-md-6">AI Development (1 year): Built comprehensive Marketing/Sales AI systems.</li>
+    </ul>
+    <hr>
+
+    <!-- PDF Link & Embed -->
+    <p class="text-center">
+      <a
+        href="https://acrobat.adobe.com/id/urn:aaid:sc:US:9003e1d7-e373-41df-bc2a-a8b52bd67b8d"
+        target="_blank"
+        class="btn btn-outline-secondary"
       >
-        Your browser does not support embedded PDFs.  
-        <a href="JakobRich_Resume.pdf">Download the PDF instead</a>.
-      </iframe>
-    </section>
+        View / Download PDF Résumé
+      </a>
+    </p>
+
+    <h2 class="mt-4 text-center">View PDF Online</h2>
+    <iframe
+      src="https://acrobat.adobe.com/id/urn:aaid:sc:US:9003e1d7-e373-41df-bc2a-a8b52bd67b8d"
+      width="100%"
+      height="600"
+      style="border:1px solid #ccc;"
+    >
+      Your browser does not support embedded PDFs.  
+      <a
+        href="https://acrobat.adobe.com/id/urn:aaid:sc:US:9003e1d7-e373-41df-bc2a-a8b52bd67b8d"
+        target="_blank"
+      >Click here to download the PDF</a>.
+    </iframe>
   </main>
 
-  <!-- Footer
-       (your existing footer code) -->
+  <!-- Footer -->
   <footer class="text-center py-3">
     &copy; 2025 Jakob Rich
   </footer>
 
   <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
