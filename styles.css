@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* Reset margins and padding */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for navigation on all pages */
+  .navbar, nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar a, nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover, nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Container styling for content blocks */
+  .container {
+    padding: 20px;
+  }
+  

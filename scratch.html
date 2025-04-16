@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch Page - Batman</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom styles for the scratch page */
+    body {
+      background-color: #1a1a1a; /* Dark background for a dramatic look */
+      color: #eee;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="resume.html">Resume</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="scratch.html">Scratch</a>
+  </nav>
+
+  <!-- Section 1: Batman's Bio with an on-page anchor -->
+  <div class="container" id="batmanBio">
+    <h1>Batman's Bio</h1>
+    <p>I am Batman. Born as Bruce Wayne, I witnessed a tragedy that set me on the path to fight crime in Gotham.</p>
+    <a href="#batTools">Jump to Bat Tools</a>
+  </div>
+
+  <!-- Section 2: Nested List (Bat Tools) -->
+  <div class="container" id="batTools">
+    <h2>Bat Tools</h2>
+    <ol>
+      <li>Transportation
+        <ul>
+          <li>Batmobile</li>
+          <li>Batwing</li>
+        </ul>
+      </li>
+      <li>Gadgets
+        <ul>
+          <li>Batarangs</li>
+          <li>Grapple Gun</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Section 3: Embedded YouTube Video -->
+  <div class="container">
+    <h2>Watch Batman in Action</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="Batman Action Video" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <!-- Replace YOUR_VIDEO_ID with the actual YouTube video ID -->
+  </div>
+
+  <!-- Section 4: Embedded Tableau Graph (placeholder embed) -->
+  <div class="container">
+    <h2>Interactive Tableau Graph</h2>
+    <div class="tableauPlaceholder" style="width: 100%; height: 600px;">
+      <object class="tableauViz" width="100%" height="600" style="display:none;">
+         <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+         <param name="embed_code_version" value="3" />
+         <param name="path" value="YOUR_TABLEAU_VIZ_PATH" />
+         <param name="toolbar" value="yes" />
+      </object>
+      <noscript>
+        <a href="https://public.tableau.com/views/YOUR_TABLEAU_VIZ_PATH">View Interactive Graph</a>
+      </noscript>
+      <!-- Replace YOUR_TABLEAU_VIZ_PATH with your actual Tableau visualization path -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container" style="text-align: center; padding: 20px;">
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
