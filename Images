@@ -1,1 +1,5 @@
-
+<img
+  src="Images/profile.jpg"
+  alt="Jakob Rich"
+  class="img-fluid rounded-circle profile-img"
+/>
